@@ -1,20 +1,10 @@
-var a=prompt("Enter a 1st no : ");
-var b=prompt("ENter a 2nd  no :");
+var friends = ['sam', 'john', 'ramy'];
 
 function setup() {
-  createCanvas(400, 400);
-  var b2=createButton("Swap");
-b2.mousePressed(swap);
+  console.log(friends);
+  console.log("Hi ",friends[1],"!Please grace us with your presence at my birthday celebration");
 }
 
 function draw() {
-  background("yellow");
-}
-function swap(){
-console.log("value of a before swapping",+a);
-console.log("value of b before+ swapping",+b);
-  [a,b] = [b,a];
-console.log("value of a after swapping",+a);
-console.log("value of b after swapping",+b);
-
+  background(220);
 }
